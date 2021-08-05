@@ -1,0 +1,3 @@
+# Extension Password Expiration Enforcement
+
+Use the password expiration fields already present on the `UserLocal` class to implement the password expiration behavior...
