@@ -53,6 +53,7 @@ class PasswordExpiration extends AbstractLoginFSMExtension
 				// By passing an already hashed password we workaround the password validation policies
 				// in order to make sure that the new password can be recorded
 				$oUser->Set('password', $oHashedPassword);
+				$oUser->AllowWrite(); // Bypass write access to ensure that we can change the password for any user
 				$oUser->DBUpdate();
 			}
 			else if ($oUser->Get('expiration') == UserLocal::EXPIRE_CAN)
