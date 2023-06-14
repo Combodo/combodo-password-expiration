@@ -5,7 +5,6 @@
  * @copyright   Copyright (C) 2021 Combodo SARL
  * @license     http://opensource.org/licenses/AGPL-3.0
  */
-
 Dict::Add('HU HU', 'Hungarian', 'Magyar', array(
 	// Dictionary entries go here
 	'Class:UserLocal/Attribute:expiration+' => 'Password expiration settings~~',
