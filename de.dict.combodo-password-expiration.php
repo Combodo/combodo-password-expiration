@@ -7,7 +7,7 @@
  */
 Dict::Add('DE DE', 'German', 'Deutsch', array(
 	// Dictionary entries go here
-	'Class:UserLocal/Attribute:expiration+' => 'Password expiration settings~~',
-	'UserLocal:password:expiration' => 'Password expiration settings~~',
-	'PwdExpirationEnforcement:PasswordExpired' => 'Your password has expired and must be changed~~',
+	'Class:UserLocal/Attribute:expiration+' => 'Einstellungen zur Passwortgültigkeit',
+	'UserLocal:password:expiration' => 'Einstellungen zur Passwortgültigkeit',
+	'PwdExpirationEnforcement:PasswordExpired' => 'Ihr Passwort ist abgelaufen und muss geändert werden',
 ));
