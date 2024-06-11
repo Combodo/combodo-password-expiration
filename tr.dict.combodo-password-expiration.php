@@ -2,12 +2,15 @@
 /**
  * Localized data
  *
- * @copyright   Copyright (C) 2024 Combodo SAS
- * @license     http://opensource.org/licenses/AGPL-3.0
+ * @copyright Copyright (C) 2010-2024 Combodo SAS
+ * @license    https://opensource.org/licenses/AGPL-3.0
+ * 
  */
-Dict::Add('TR TR', 'Turkish', 'Türkçe', array(
-	// Dictionary entries go here
+/**
+ *
+ */
+Dict::Add('TR TR', 'Turkish', 'Türkçe', [
 	'Class:UserLocal/Attribute:expiration+' => 'Password expiration settings~~',
-	'UserLocal:password:expiration' => 'Password expiration settings~~',
 	'PwdExpirationEnforcement:PasswordExpired' => 'Your password has expired and must be changed~~',
-));
+	'UserLocal:password:expiration' => 'Password expiration settings~~',
+]);
