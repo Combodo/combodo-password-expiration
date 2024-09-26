@@ -64,7 +64,7 @@ class PasswordExpiration extends AbstractLoginFSMExtension
 				{
 					$oLatestPwdChangeDate = new DateTime($oUser->Get('password_renewed_date'));
 					$oExpiration = clone $oLatestPwdChangeDate;
-					$oExpiration->modify("+$iExpirationDelay day");
+					$oExpiration->modify("$iExpirationDelay day");
 					$oToday = new DateTime();
 					if ($oExpiration < $oToday)
 					{
