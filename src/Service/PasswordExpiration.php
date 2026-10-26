@@ -28,7 +28,7 @@ class PasswordExpiration extends AbstractLoginFSMExtension
 	 *
 	 * @return int LoginWebPage::LOGIN_FSM_RETURN_ERROR, LoginWebPage::LOGIN_FSM_RETURN_OK or LoginWebPage::LOGIN_FSM_RETURN_IGNORE
 	 */
-	protected function OnCredentialsOK(&$iErrorCode)
+	protected function OnUsersOK(&$iErrorCode)
 	{
 		$oUser = UserRights::GetUserObject();
 		
@@ -77,7 +77,7 @@ class PasswordExpiration extends AbstractLoginFSMExtension
 				}
 			}
 		}
-		return parent::OnCredentialsOK($iErrorCode);
+		return parent::OnUsersOK($iErrorCode);
 	}
 	
 	/**
